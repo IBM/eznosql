@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.ibm.eznosql"},{"l":"com.ibm.eznosql.exception"},{"l":"com.ibm.eznosql.jni"},{"l":"com.ibm.eznosql.options"},{"l":"com.ibm.eznosql.result"}]
