@@ -1,2 +1,2 @@
-# eznosql
-EzNoSQL public API reference, please visit https://www.ibm.com/support/z-content-solutions/eznosql/
+# EzNoSQL Documentation
+https://ibm.github.io/eznosql/
