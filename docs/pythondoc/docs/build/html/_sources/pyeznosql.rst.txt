@@ -1,0 +1,6 @@
+=================
+``pyeznosql``
+=================
+
+.. automodule:: pyeznosql.pyeznosql
+    :members: znsq_create, znsq_create_index, znsq_add_index, znsq_drop_index, znsq_destroy, znsq_last_result
