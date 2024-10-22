@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ReadIntegrity &#8212; pyeznosql 1.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=8d563738"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="canonical" href="https://ibm.github.io/eznosql/pydocs/read_integrity.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="DataFormat" href="data_format.html" />
+    <link rel="prev" title="LogOption" href="log_option.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="readintegrity">
+<h1><code class="docutils literal notranslate"><span class="pre">ReadIntegrity</span></code><a class="headerlink" href="#readintegrity" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="pyeznosql.options.ReadIntegrity">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ReadIntegrity</span></span><a class="headerlink" href="#pyeznosql.options.ReadIntegrity" title="Link to this definition">¶</a></dt>
+<dd><p>The ReadIntegrity class represents a document-level lock setting for a
+read/replace request. The class may be used in the
+<a class="reference internal" href="eznosql_client.html#pyeznosql.client.EzNoSQLClient.__init__" title="pyeznosql.client.EzNoSQLClient.__init__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__init__()</span></code></a> method as an argument to
+specify the level and duration of lock sharing depending on the
+recoverability of the database</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyeznosql.options.ReadIntegrity.NRI">
+<span class="sig-name descname"><span class="pre">NRI</span></span><a class="headerlink" href="#pyeznosql.options.ReadIntegrity.NRI" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates No Read Integrity (NRI) for the connection. Returns the
+latest version of the document at the time of the read request</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyeznosql.options.ReadIntegrity.CR">
+<span class="sig-name descname"><span class="pre">CR</span></span><a class="headerlink" href="#pyeznosql.options.ReadIntegrity.CR" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates Consistent Read (CR) for the connection. Obtains a shared
+lock for the duration of the read request.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyeznosql.options.ReadIntegrity.CRE">
+<span class="sig-name descname"><span class="pre">CRE</span></span><a class="headerlink" href="#pyeznosql.options.ReadIntegrity.CRE" title="Link to this definition">¶</a></dt>
+<dd><p>Indicates Consistent Read Extended (CRE) for the connection.
+Obtains a shared lock for the entire duration of the transaction</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyeznosql.options.ReadIntegrity.__new__">
+<span class="sig-name descname"><span class="pre">__new__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyeznosql.options.ReadIntegrity.__new__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">pyeznosql</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="database.html"><code class="docutils literal notranslate"><span class="pre">database</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="eznosql_client.html"><code class="docutils literal notranslate"><span class="pre">EzNoSQLClient</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="result_set.html"><code class="docutils literal notranslate"><span class="pre">ResultSet</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="log_option.html"><code class="docutils literal notranslate"><span class="pre">LogOption</span></code></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">ReadIntegrity</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pyeznosql.options.ReadIntegrity"><code class="docutils literal notranslate"><span class="pre">ReadIntegrity</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data_format.html"><code class="docutils literal notranslate"><span class="pre">DataFormat</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="error.html"><code class="docutils literal notranslate"><span class="pre">EzNoSQLError</span></code></a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="log_option.html" title="previous chapter"><code class="docutils literal notranslate"><span class="pre">LogOption</span></code></a></li>
+      <li>Next: <a href="data_format.html" title="next chapter"><code class="docutils literal notranslate"><span class="pre">DataFormat</span></code></a></li>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, z/OS VSAM RLS.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.3.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/read_integrity.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
