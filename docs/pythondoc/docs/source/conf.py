@@ -49,5 +49,5 @@ intersphinx_mapping = {
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'alabaster'
-html_baseurl = 'https://ibm.github.io/eznosql/pythondoc/docs/'
+html_baseurl = 'https://ibm.github.io/eznosql/pythondoc/'
 html_static_path = ['_static']
