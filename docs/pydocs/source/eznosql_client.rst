@@ -4,9 +4,11 @@
 
 .. important::
     A client instance manages a connection token and provides context
-    management functionality using :meth:`~.__enter__` and :meth:`~.__exit__`
-    methods. Please note that only one active connection is supported per
-    client, and all member functions require a valid database connection.
+    management functionality using
+    :meth:`~pyeznosql.client.EzNoSQLClient.__enter__` and
+    :meth:`~pyeznosql.client.EzNoSQLClient.__exit__` methods. Please note
+    that only one active connection is supported per client, and all member
+    functions require a valid database connection.
 
     Additional connections can be established as needed by creating
     multiple EzNoSQLClient instances with different options, or to load
@@ -14,7 +16,8 @@
     read/write requests.
 
     If opting to manage connection tokens manually, a client connection
-    should be terminated by using the :meth:`~.znsq_close` method
+    should be terminated by using the
+    :meth:`~pyeznosql.client.EzNoSQLClient.znsq_close` method
 
 .. autoclass:: pyeznosql.client.EzNoSQLClient
     :members:

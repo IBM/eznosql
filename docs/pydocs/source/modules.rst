@@ -1,7 +1,7 @@
 pyeznosql
 =========
 
-.. toctree::
-   :maxdepth: 4
-
-    pyeznosql
+.. automodule:: pyeznosql
+   :members: configure_logging
+   :undoc-members:
+   :show-inheritance:

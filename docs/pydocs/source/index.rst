@@ -10,6 +10,7 @@ Welcome to pyeznosql's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   modules.rst
    database.rst
    eznosql_client.rst
    result_set.rst
